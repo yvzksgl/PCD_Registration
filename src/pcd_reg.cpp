@@ -49,7 +49,7 @@ void PcdRegNode::gicp_registration(pcl::PointCloud<pcl::PointXYZ>::Ptr input_clo
 
 /*  
     Parameter tuning doesn't provide any considerable improvement on gicp's accuracy
-    Also didn't effect its speed as well.
+    Also didn't affect its speed as well.
 
     gicp.setMaxCorrespondenceDistance(30);
     gicp.setMaximumIterations(35);
@@ -68,10 +68,10 @@ void PcdRegNode::gicp_registration(pcl::PointCloud<pcl::PointXYZ>::Ptr input_clo
 }
 
 void PcdRegNode::ndt_registration(pcl::PointCloud<pcl::PointXYZ>::Ptr input_cloud,
-                                         pcl::PointCloud<pcl::PointXYZ>::Ptr target_cloud,
-                                         pcl::PointCloud<pcl::PointXYZ>::Ptr filtered_cloud,
-                                         pcl::PointCloud<pcl::PointXYZ>::Ptr output_cloud,
-                                         Eigen::Matrix4f init_guess){
+                                  pcl::PointCloud<pcl::PointXYZ>::Ptr target_cloud,
+                                  pcl::PointCloud<pcl::PointXYZ>::Ptr filtered_cloud,
+                                  pcl::PointCloud<pcl::PointXYZ>::Ptr output_cloud,
+                                  Eigen::Matrix4f init_guess){
     pcl::NormalDistributionsTransform<pcl::PointXYZ, pcl::PointXYZ> ndt;
 
 /*  
