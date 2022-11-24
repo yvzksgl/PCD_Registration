@@ -5,8 +5,6 @@
 #include <pcl/visualization/pcl_visualizer.h>
 #include "pcd_reg.hpp"
 
-using namespace std::chrono_literals;
-
 int PcdRegNode::pcd_reader(){
     std::string input_pcd1_path;
     std::string input_pcd2_path;
