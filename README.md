@@ -17,14 +17,14 @@ source install/setup.bash
 ```
 
 ## Launch
-You may want to change algorithm that will be applied. To do that you need to alter launch file.
+You may want to change algorithm that will be applied. To do that you need to alter launch file in '${workspace}/src/launch'.
 ```
 parameters=[{"input_pcd1_path":"data/capture0001.pcd"},
                         {"input_pcd2_path":"data/capture0002.pcd"},
                         {"out_pcd_path":"data/transformed.pcd"},
                         {"algorithm": "gicp"}]
 ```
-Only "gicp" and "ndt" allowed for algorithm parameter. To launch program as pre-configured:
+Only "gicp" and "ndt" allowed for the algorithm parameter. To launch program as pre-configured:
 ```
 ros2 launch pcd_reg pcd_reg.launch.py
 ```
