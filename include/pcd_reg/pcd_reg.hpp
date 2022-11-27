@@ -10,9 +10,9 @@ using namespace std::chrono_literals;
 class PcdRegNode : public rclcpp::Node{
 public:
     PcdRegNode() : Node("PcdRegistrator"){
-        this->declare_parameter("input_pcd1_path","pcds/capture0001.pcd");
-        this->declare_parameter("input_pcd2_path","pcds/capture0002.pcd");
-        this->declare_parameter("out_pcd_path","pcds/transformed.pcd");
+        this->declare_parameter("input_pcd1_path","data/capture0001.pcd");
+        this->declare_parameter("input_pcd2_path","data/capture0002.pcd");
+        this->declare_parameter("out_pcd_path","data/transformed.pcd");
         this->declare_parameter("algorithm","gicp");
         timer_ = this->create_wall_timer(500ms, std::bind(&PcdRegNode::pcd_pub, this));
         this->in_pub1=this->create_publisher<sensor_msgs::msg::PointCloud2>("capture1",10);
