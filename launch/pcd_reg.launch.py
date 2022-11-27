@@ -4,7 +4,6 @@ from launch_ros.substitutions.find_package import FindPackageShare
 
 def generate_launch_description():
     rviz_config=FindPackageShare.find(FindPackageShare,"pcd_reg")+"/launch/config/config.rviz"
-    print(rviz_config)
     return LaunchDescription([
         Node(
             package='pcd_reg',
