@@ -29,7 +29,7 @@ Only "gicp" and "ndt" allowed for algorithm parameter. To launch program as pre-
 ros2 launch pcd_reg pcd_reg.launch.py
 ```
 ## Results
-Both of the results, green illustrates source pointcloud, red illustrates target pointclud and blue illustrates output pointcloud.
+Both of the results, green illustrates source pointcloud, red illustrates target pointclud and blue illustrates output pointcloud. GICP works pretty good but NDT failed at my implementation. It can be enhanced by parameter tuning but it makes NDT very slow in my case. solution may be find in the future. 
 - GICP
 ![gicp rviz2 output](images/gicp_rviz2.png)
 - NDT
