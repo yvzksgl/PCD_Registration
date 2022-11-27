@@ -7,7 +7,6 @@ This is a ros package that register 2 pointclouds with using either Generalized 
 - [PCL Library](https://pointclouds.org/downloads/)
 
 ## Build
-First you need to clone repository in your workspace and build.
 
 ```
 cd ${workspace}/src
