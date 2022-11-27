@@ -11,7 +11,7 @@ This is a ros package that register 2 pointclouds with using either Generalized 
 ```
 cd ${workspace}/src
 git clone https://github.com/yvzksgl/PCD_Registration.git
-cd $[workspace}
+cd ${workspace}
 colcon build
 source install/setup.bash
 ```
