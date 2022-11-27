@@ -17,7 +17,7 @@ source install/setup.bash
 ```
 
 ## Launch
-You may want to change algorithm that will be applied. To do that you need to alter launch file in '${workspace}/src/launch'.
+You may want to change algorithm that will be applied. To do that you need to alter launch file in '${workspace}/src/PCD_Registration/launch'.
 ```
 parameters=[{"input_pcd1_path":"data/capture0001.pcd"},
                         {"input_pcd2_path":"data/capture0002.pcd"},
